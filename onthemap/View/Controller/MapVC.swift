@@ -44,17 +44,14 @@ class MapVC: UIViewController {
             
             // The lat and long are used to create a CLLocationCoordinates2D instance.
             let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-            
-            // Student name returns nil because Udacity user data is now anonymous and randomized
-            //            let first = location.firstName!
-            //            let last = location.lastName!
             let mediaURL = location.mediaURL
             
             // Creates annotation and sets the coordiates, title, and subtitle properties
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
+            
             // Student name returns nil because Udacity user data is now anonymous and randomized
-            annotation.title = "\("FirstName") \("LastName")"
+            annotation.title = "\(location.firstName ?? "") \(location.lastName ?? "")"
             annotation.subtitle = mediaURL
             
             // Place annotations in an array of annotations

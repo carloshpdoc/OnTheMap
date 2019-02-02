@@ -23,7 +23,7 @@ extension UdacityClient {
                 completionHandlerForAuth(success, nil)
                 
             } else {
-                completionHandlerForAuth(false, "Authenticate Failure");
+                completionHandlerForAuth(false, error?.localizedDescription);
             }
         }
     }

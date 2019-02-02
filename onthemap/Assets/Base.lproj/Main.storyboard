@@ -321,7 +321,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="yp4-3T-Ej3" kind="show" id="RRG-V4-DNp"/>
+                                            <segue destination="yp4-3T-Ej3" kind="show" identifier="sendLocationSegue" id="RRG-V4-DNp"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -134,7 +134,7 @@ class LocationVC: UIViewController {
                 self.reverseGeocoding(latitude: lat, longitude: long)
             } else {
                 // Show Alert
-                self.dispatchAlert(nil, message: "No Internet")
+                self.dispatchAlert(nil, message: "Geocoding has failed!")
             }
         })
     }
